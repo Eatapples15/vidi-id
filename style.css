@@ -1,5 +1,6 @@
 :root {
   --navy: #1d2b4f;
+  --passport-color: #6b1e2c;
   --navy-soft: #2c3e6b;
   --gold: #e8c872;
   --gold-deep: #b8923a;
@@ -274,7 +275,7 @@ img {
     radial-gradient(120% 70% at 25% 10%, rgb(255 255 255 / 0.13), transparent 60%),
     radial-gradient(90% 80% at 85% 110%, rgb(0 0 0 / 0.35), transparent 65%),
     repeating-linear-gradient(35deg, rgb(255 255 255 / 0.03) 0 1px, transparent 1px 3px),
-    #6b1e2c;
+    var(--passport-color);
   box-shadow:
     inset 14px 0 16px -12px rgb(0 0 0 / 0.6),
     0 30px 60px rgb(0 0 0 / 0.35);
