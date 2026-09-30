@@ -1,0 +1,29 @@
+name: Pubblica identità e revoche
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/publish.mjs
+      - name: Commit
+        run: |
+          git config user.name "vidi-publisher"
+          git config user.email "vidi-publisher@users.noreply.github.com"
+          git add -A org status .well-known 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nessuna modifica"; else git commit -m "Aggiorna identità e revoche" && git push; fi
