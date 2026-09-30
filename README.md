@@ -7,4 +7,4 @@ Documenti pubblici di identità (`did:web`) degli emittenti di attestati VIDI, p
 - `did.json` — documento DID della piattaforma
 
 Contiene solo dati pubblici: nessun dato personale, nessuna chiave privata.
-I file sono generati dal repository principale; non modificarli a mano.
+I file sono generati dal repository principale.
