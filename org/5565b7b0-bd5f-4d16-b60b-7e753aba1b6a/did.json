@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/multikey/v1"
+  ],
+  "id": "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a",
+  "verificationMethod": [
+    {
+      "id": "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a#key-1",
+      "type": "Multikey",
+      "controller": "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a",
+      "publicKeyMultibase": "z6MkpV1uocsAHH6Z5rDNeXURQrsVaXvrdKYA5gf5aK3SFBvC"
+    }
+  ],
+  "assertionMethod": [
+    "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a#key-1"
+  ]
+}
