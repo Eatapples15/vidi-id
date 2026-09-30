@@ -1,9 +1,183 @@
 <!doctype html>
 <html lang="it">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VIDI · Identità degli emittenti</title></head>
-<body style="font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;line-height:1.5">
-<h1>VIDI · Identità degli emittenti</h1>
-<p>Questo indirizzo pubblica i documenti di identità (DID <code>did:web</code>) degli enti che emettono attestati con VIDI: nome dell'ente e chiavi pubbliche per verificare le firme.</p>
-<p>Non contiene dati personali né chiavi private.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIDI</title>
+    <meta
+      name="description"
+      content="VIDI, il passaporto digitale della formazione verificata: presenze certe a corsi ed eventi, attestati con firma digitale verificabili da chiunque, libretto con ore e crediti."
+    />
+    <meta name="theme-color" content="#1d2b4f" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true">
+            <circle cx="50" cy="50" r="44" />
+            <path d="M50 22 57.6 40.5 77.5 41.9 62.3 54.8 67 74.2 50 63.7 33 74.2 37.7 54.8 22.5 41.9 42.4 40.5Z" stroke-linejoin="round" />
+          </svg>
+          <span data-brand>VIDI</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav class="site-nav" id="nav">
+          <a href="#come-funziona">Come funziona</a>
+          <a href="organizzazioni.html">Per le organizzazioni</a>
+          <a href="aziende.html">Per le aziende</a>
+          <a data-app="events" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/events">Eventi</a>
+          <a class="btn" data-app="" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/">Il mio passaporto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <span class="eyebrow">Corsi · Giornate formative · Open day · Fiere</span>
+            <h1>La tua formazione, verificata. In un solo passaporto.</h1>
+            <p class="lead">
+              VIDI registra presenze certe a corsi, giornate formative ed eventi, rilascia attestati con firma digitale
+              che chiunque può verificare e li raccoglie in un libretto con ore e crediti, valido tra organizzazioni
+              diverse.
+            </p>
+            <div class="actions">
+              <a class="btn" data-app="events" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/events">Sfoglia gli eventi</a>
+              <a class="btn ghost" href="organizzazioni.html">Organizzi eventi?</a>
+            </div>
+          </div>
+          <div aria-hidden="true" style="position: relative">
+            <div class="passport">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="50" cy="50" r="46" />
+                <circle cx="50" cy="50" r="40" stroke-dasharray="1 4" stroke-linecap="round" />
+                <path d="M50 22 57.6 40.5 77.5 41.9 62.3 54.8 67 74.2 50 63.7 33 74.2 37.7 54.8 22.5 41.9 42.4 40.5Z" fill="currentColor" fill-opacity="0.18" stroke-linejoin="round" />
+              </svg>
+              <strong>VIDI</strong>
+              <span>Passaporto della formazione</span>
+            </div>
+            <div class="stamp-mark">Primo<br />soccorso<br />✓</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="per-chi">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Per chi è</span>
+            <h2>Un unico sistema, tre modi di usarlo.</h2>
+          </div>
+          <div class="grid">
+            <article class="card audience">
+              <span class="icon" aria-hidden="true">✦</span>
+              <h3>Partecipanti</h3>
+              <p>
+                Un solo passaporto per tutti i corsi e gli eventi, di qualsiasi organizzatore. Raccogli presenze e
+                attestati verificabili, tieni il conto di ore e crediti e condividi il tuo percorso.
+              </p>
+              <a class="btn dark" data-app="login" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/login">Crea il passaporto</a>
+            </article>
+            <article class="card audience gold">
+              <span class="icon" aria-hidden="true">★</span>
+              <h3>Organizzazioni</h3>
+              <p>
+                Enti di formazione, associazioni, scuole, organizzatori di fiere: crea corsi ed eventi, attiva i tablet,
+                conta le presenze e rilascia attestati firmati digitalmente, senza carta.
+              </p>
+              <a class="btn dark" href="organizzazioni.html">Scopri come</a>
+            </article>
+            <article class="card audience red">
+              <span class="icon" aria-hidden="true">◆</span>
+              <h3>Aziende espositrici</h3>
+              <p>
+                Sei presente con uno stand? Gestisci i tuoi tablet e il tuo timbro, offri premi ai visitatori e misura quante
+                persone passano da te.
+              </p>
+              <a class="btn dark" href="aziende.html">Per le aziende</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="come-funziona" class="alt">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Come funziona</span>
+            <h2>Dal link dell'evento all'attestato, in quattro passi.</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>Aggiungi l'evento</h3>
+              <p>Dal catalogo o dal QR all'ingresso: l'evento entra nel tuo passaporto, sul telefono.</p>
+            </li>
+            <li>
+              <h3>Visita gli stand</h3>
+              <p>Mostri il tuo QR, che cambia ogni 30 secondi: il timbro compare subito, anche con poca rete.</p>
+            </li>
+            <li>
+              <h3>Completa il percorso</h3>
+              <p>Ogni stand timbrato ti avvicina a traguardi, livelli e ai premi degli espositori.</p>
+            </li>
+            <li>
+              <h3>Ottieni l'attestato</h3>
+              <p>Un attestato con QR di verifica e firma digitale (Open Badges), da aggiungere a LinkedIn e al curriculum.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap split">
+          <div>
+            <span class="eyebrow">Perché conta</span>
+            <h2 style="margin: 0.4rem 0 1.25rem; font-size: clamp(1.7rem, 4vw, 2.4rem)">Un percorso che vale anche dopo l'evento.</h2>
+            <ul class="checklist">
+              <li><span><strong>Presenze vere.</strong> Timbri firmati e verificati dal server: nessuno può timbrare al posto tuo.</span></li>
+              <li><span><strong>Attestati con firma digitale.</strong> Chiunque può verificarli dal QR o dal file firmato, anche un datore di lavoro, senza chiamare l'ente. Se un attestato viene revocato, si vede.</span></li>
+              <li><span><strong>Libretto formativo.</strong> Ore e crediti (ECM, CFP e altri) di tutti i corsi, in un unico posto, esportabili in PDF.</span></li>
+              <li><span><strong>Traguardi e livelli.</strong> Più eventi fai, più il tuo passaporto racconta di te.</span></li>
+              <li><span><strong>Profilo condivisibile.</strong> Un link al tuo percorso per il CV, LinkedIn o WhatsApp.</span></li>
+              <li><span><strong>Premi.</strong> Omaggi e sconti degli espositori, sbloccati visitando gli stand.</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Privacy</span>
+            <h3>I tuoi dati restano tuoi</h3>
+            <p>
+              Il profilo pubblico è spento finché non lo attivi. La foto tessera allo staff e i tuoi contatti alle aziende
+              espositrici arrivano solo se dai il consenso, e lo puoi revocare quando vuoi. Puoi scaricare tutti i tuoi dati
+              o cancellare l'account, e i dati sono conservati nell'Unione Europea.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="wrap">
+          <h2>Il tuo prossimo evento ti aspetta.</h2>
+          <p>Crea il passaporto in un minuto, con Google o con la tua email.</p>
+          <div class="actions">
+            <a class="btn" data-app="events" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/events">Sfoglia gli eventi</a>
+            <a class="btn ghost" data-app="login" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/login">Accedi</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© <span data-brand>VIDI</span></span>
+        <nav>
+          <a href="organizzazioni.html">Organizzazioni</a>
+          <a href="aziende.html">Aziende</a>
+          <a data-app="events" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/events">Eventi</a>
+          <a data-app="accreditation" href="https://www.formazionesicurezza.org/protezionecivile/passaporto_formazione/accreditation">Ho un codice</a>
+          <a href="emittenti/">Emittenti e verifica</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
