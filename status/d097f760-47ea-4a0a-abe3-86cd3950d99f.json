@@ -1,26 +1,26 @@
 {
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
   "id": "https://vidi.formazionesicurezza.org/status/d097f760-47ea-4a0a-abe3-86cd3950d99f.json",
   "type": [
     "VerifiableCredential",
     "BitstringStatusListCredential"
   ],
-  "proof": {
-    "type": "DataIntegrityProof",
-    "created": "2026-09-30T09:50:51Z",
-    "proofValue": "z2Cr7GoZ5sUqY2xafk72NczmFDL656phfu3N2pQn8ukvXjgBboSQ6YaJwNpEM5EiZLPM6zoEBr7Dzo9Wo3258UEDF",
-    "cryptosuite": "eddsa-rdfc-2022",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a#key-1"
-  },
   "issuer": "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a",
-  "@context": [
-    "https://www.w3.org/ns/credentials/v2"
-  ],
-  "validFrom": "2026-09-30T09:50:51.104Z",
+  "validFrom": "2026-09-30T09:56:44.738Z",
   "credentialSubject": {
     "id": "https://vidi.formazionesicurezza.org/status/d097f760-47ea-4a0a-abe3-86cd3950d99f.json#list",
     "type": "BitstringStatusList",
-    "encodedList": "uH4sIAAAAAAAA_-zBMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIDOBgAA__8DAIbSVKsAQAAA",
-    "statusPurpose": "revocation"
+    "statusPurpose": "revocation",
+    "encodedList": "uH4sIAAAAAAAA_-zBIQEAAAACIKc73RkWoAEAAAAAAAAAAAAAAAAAAAByNgAAAP__AwDkWUNnAEAAAA"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2026-09-30T09:56:44Z",
+    "verificationMethod": "did:web:vidi.formazionesicurezza.org:org:5565b7b0-bd5f-4d16-b60b-7e753aba1b6a#key-1",
+    "cryptosuite": "eddsa-rdfc-2022",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "zqQ2W54fdmg7ighpuxSuBXLarkGzE5yuh5RFJbWfvPKDNWH35vU39pTM4MSxr8nkwLaVNtMvmkkwCqB7e66TXHCL"
   }
 }
